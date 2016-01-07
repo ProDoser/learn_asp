@@ -1,0 +1,823 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="ScrumCaseDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="DefinitionOfDone">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="description" Type="varchar" MaxLength="250" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Meeting">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="meetingTypeId" Type="int" />
+          <Property Name="sprintId" Type="int" />
+          <Property Name="startTime" Type="datetime" />
+        </EntityType>
+        <EntityType Name="MeetingType">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" Nullable="false" />
+          <Property Name="name" Type="varchar" MaxLength="200" />
+        </EntityType>
+        <EntityType Name="PBLItem">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="name" Type="varchar" MaxLength="200" Nullable="false" />
+          <Property Name="projectId" Type="int" Nullable="false" />
+          <Property Name="sprintId" Type="int" />
+          <Property Name="statusID" Type="int" Nullable="false" />
+          <Property Name="priority" Type="int" Nullable="false" />
+          <Property Name="estimatedHours" Type="int" Nullable="false" />
+          <Property Name="description" Type="varchar" MaxLength="200" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Person">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="firstName" Type="varchar" MaxLength="200" />
+          <Property Name="lastName" Type="varchar" MaxLength="200" />
+          <Property Name="phone" Type="varchar" MaxLength="200" />
+          <Property Name="email" Type="varchar" MaxLength="256" />
+        </EntityType>
+        <EntityType Name="Project">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="definitionOfDoneId" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="ProjectRoleAssignment">
+          <Key>
+            <PropertyRef Name="projectId" />
+            <PropertyRef Name="personId" />
+          </Key>
+          <Property Name="projectId" Type="int" Nullable="false" />
+          <Property Name="personId" Type="int" Nullable="false" />
+          <Property Name="roleId" Type="int" />
+        </EntityType>
+        <EntityType Name="ScrumRoleType">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" Nullable="false" />
+          <Property Name="name" Type="varchar" MaxLength="200" />
+        </EntityType>
+        <EntityType Name="Sprint">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="name" Type="varchar" MaxLength="200" />
+          <Property Name="projectId" Type="int" Nullable="false" />
+          <Property Name="startDate" Type="date" Nullable="false" />
+          <Property Name="endDate" Type="date" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Status">
+          <Key>
+            <PropertyRef Name="statusId" />
+          </Key>
+          <Property Name="statusId" Type="int" Nullable="false" />
+          <Property Name="status" Type="varchar" MaxLength="25" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Task">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="name" Type="varchar" MaxLength="200" Nullable="false" />
+          <Property Name="statusID" Type="int" Nullable="false" />
+          <Property Name="priority" Type="int" Nullable="false" />
+          <Property Name="estimatedHours" Type="datetime" Nullable="false" />
+          <Property Name="description" Type="varchar" MaxLength="200" />
+          <Property Name="PBLItemID" Type="int" Nullable="false" />
+          <Property Name="personID" Type="int" />
+          <Property Name="assignmentDate" Type="date" />
+          <Property Name="completionDate" Type="date" />
+        </EntityType>
+        <Association Name="FK_definitionOfDoneId">
+          <End Role="DefinitionOfDone" Type="Self.DefinitionOfDone" Multiplicity="1" />
+          <End Role="Project" Type="Self.Project" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="DefinitionOfDone">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="Project">
+              <PropertyRef Name="definitionOfDoneId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="fk_MeetingSprintId">
+          <End Role="Sprint" Type="Self.Sprint" Multiplicity="0..1" />
+          <End Role="Meeting" Type="Self.Meeting" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Sprint">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="Meeting">
+              <PropertyRef Name="sprintId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="fk_meetingTypeId">
+          <End Role="MeetingType" Type="Self.MeetingType" Multiplicity="0..1" />
+          <End Role="Meeting" Type="Self.Meeting" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="MeetingType">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="Meeting">
+              <PropertyRef Name="meetingTypeId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PBLItemId">
+          <End Role="PBLItem" Type="Self.PBLItem" Multiplicity="1" />
+          <End Role="Task" Type="Self.Task" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PBLItem">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="Task">
+              <PropertyRef Name="PBLItemID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PBLItemProjectId">
+          <End Role="Project" Type="Self.Project" Multiplicity="1" />
+          <End Role="PBLItem" Type="Self.PBLItem" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Project">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="PBLItem">
+              <PropertyRef Name="projectId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PBLItemSprintId">
+          <End Role="Sprint" Type="Self.Sprint" Multiplicity="0..1" />
+          <End Role="PBLItem" Type="Self.PBLItem" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Sprint">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="PBLItem">
+              <PropertyRef Name="sprintId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PBLItemStatusId">
+          <End Role="Status" Type="Self.Status" Multiplicity="1" />
+          <End Role="PBLItem" Type="Self.PBLItem" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Status">
+              <PropertyRef Name="statusId" />
+            </Principal>
+            <Dependent Role="PBLItem">
+              <PropertyRef Name="statusID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="fk_ProjRoleAssPersonId">
+          <End Role="Person" Type="Self.Person" Multiplicity="1" />
+          <End Role="ProjectRoleAssignment" Type="Self.ProjectRoleAssignment" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Person">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="ProjectRoleAssignment">
+              <PropertyRef Name="personId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="fk_ProjRoleAssProjectId">
+          <End Role="Project" Type="Self.Project" Multiplicity="1" />
+          <End Role="ProjectRoleAssignment" Type="Self.ProjectRoleAssignment" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Project">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="ProjectRoleAssignment">
+              <PropertyRef Name="projectId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="fk_roleId">
+          <End Role="ScrumRoleType" Type="Self.ScrumRoleType" Multiplicity="0..1" />
+          <End Role="ProjectRoleAssignment" Type="Self.ProjectRoleAssignment" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ScrumRoleType">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="ProjectRoleAssignment">
+              <PropertyRef Name="roleId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="fk_SprintProjectId">
+          <End Role="Project" Type="Self.Project" Multiplicity="1" />
+          <End Role="Sprint" Type="Self.Sprint" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Project">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="Sprint">
+              <PropertyRef Name="projectId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TaskPersonId">
+          <End Role="Person" Type="Self.Person" Multiplicity="0..1" />
+          <End Role="Task" Type="Self.Task" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Person">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="Task">
+              <PropertyRef Name="personID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TaskStatusId">
+          <End Role="Status" Type="Self.Status" Multiplicity="1" />
+          <End Role="Task" Type="Self.Task" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Status">
+              <PropertyRef Name="statusId" />
+            </Principal>
+            <Dependent Role="Task">
+              <PropertyRef Name="statusID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="ScrumCaseDBModelStoreContainer">
+          <EntitySet Name="DefinitionOfDone" EntityType="Self.DefinitionOfDone" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Meeting" EntityType="Self.Meeting" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="MeetingType" EntityType="Self.MeetingType" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="PBLItem" EntityType="Self.PBLItem" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Person" EntityType="Self.Person" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Project" EntityType="Self.Project" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ProjectRoleAssignment" EntityType="Self.ProjectRoleAssignment" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ScrumRoleType" EntityType="Self.ScrumRoleType" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Sprint" EntityType="Self.Sprint" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Status" EntityType="Self.Status" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Task" EntityType="Self.Task" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK_definitionOfDoneId" Association="Self.FK_definitionOfDoneId">
+            <End Role="DefinitionOfDone" EntitySet="DefinitionOfDone" />
+            <End Role="Project" EntitySet="Project" />
+          </AssociationSet>
+          <AssociationSet Name="fk_MeetingSprintId" Association="Self.fk_MeetingSprintId">
+            <End Role="Sprint" EntitySet="Sprint" />
+            <End Role="Meeting" EntitySet="Meeting" />
+          </AssociationSet>
+          <AssociationSet Name="fk_meetingTypeId" Association="Self.fk_meetingTypeId">
+            <End Role="MeetingType" EntitySet="MeetingType" />
+            <End Role="Meeting" EntitySet="Meeting" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PBLItemId" Association="Self.FK_PBLItemId">
+            <End Role="PBLItem" EntitySet="PBLItem" />
+            <End Role="Task" EntitySet="Task" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PBLItemProjectId" Association="Self.FK_PBLItemProjectId">
+            <End Role="Project" EntitySet="Project" />
+            <End Role="PBLItem" EntitySet="PBLItem" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PBLItemSprintId" Association="Self.FK_PBLItemSprintId">
+            <End Role="Sprint" EntitySet="Sprint" />
+            <End Role="PBLItem" EntitySet="PBLItem" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PBLItemStatusId" Association="Self.FK_PBLItemStatusId">
+            <End Role="Status" EntitySet="Status" />
+            <End Role="PBLItem" EntitySet="PBLItem" />
+          </AssociationSet>
+          <AssociationSet Name="fk_ProjRoleAssPersonId" Association="Self.fk_ProjRoleAssPersonId">
+            <End Role="Person" EntitySet="Person" />
+            <End Role="ProjectRoleAssignment" EntitySet="ProjectRoleAssignment" />
+          </AssociationSet>
+          <AssociationSet Name="fk_ProjRoleAssProjectId" Association="Self.fk_ProjRoleAssProjectId">
+            <End Role="Project" EntitySet="Project" />
+            <End Role="ProjectRoleAssignment" EntitySet="ProjectRoleAssignment" />
+          </AssociationSet>
+          <AssociationSet Name="fk_roleId" Association="Self.fk_roleId">
+            <End Role="ScrumRoleType" EntitySet="ScrumRoleType" />
+            <End Role="ProjectRoleAssignment" EntitySet="ProjectRoleAssignment" />
+          </AssociationSet>
+          <AssociationSet Name="fk_SprintProjectId" Association="Self.fk_SprintProjectId">
+            <End Role="Project" EntitySet="Project" />
+            <End Role="Sprint" EntitySet="Sprint" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TaskPersonId" Association="Self.FK_TaskPersonId">
+            <End Role="Person" EntitySet="Person" />
+            <End Role="Task" EntitySet="Task" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TaskStatusId" Association="Self.FK_TaskStatusId">
+            <End Role="Status" EntitySet="Status" />
+            <End Role="Task" EntitySet="Task" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="ScrumCaseDBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="DefinitionOfDone">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="description" Type="String" MaxLength="250" FixedLength="false" Unicode="false" Nullable="false" />
+          <NavigationProperty Name="Project" Relationship="Self.FK_definitionOfDoneId" FromRole="DefinitionOfDone" ToRole="Project" />
+        </EntityType>
+        <EntityType Name="Meeting">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="meetingTypeId" Type="Int32" />
+          <Property Name="sprintId" Type="Int32" />
+          <Property Name="startTime" Type="DateTime" Precision="3" />
+          <NavigationProperty Name="Sprint" Relationship="Self.fk_MeetingSprintId" FromRole="Meeting" ToRole="Sprint" />
+          <NavigationProperty Name="MeetingType" Relationship="Self.fk_meetingTypeId" FromRole="Meeting" ToRole="MeetingType" />
+        </EntityType>
+        <EntityType Name="MeetingType">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" />
+          <Property Name="name" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="Meeting" Relationship="Self.fk_meetingTypeId" FromRole="MeetingType" ToRole="Meeting" />
+        </EntityType>
+        <EntityType Name="PBLItem">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="name" Type="String" MaxLength="200" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="projectId" Type="Int32" Nullable="false" />
+          <Property Name="sprintId" Type="Int32" />
+          <Property Name="statusID" Type="Int32" Nullable="false" />
+          <Property Name="priority" Type="Int32" Nullable="false" />
+          <Property Name="estimatedHours" Type="Int32" Nullable="false" />
+          <Property Name="description" Type="String" MaxLength="200" FixedLength="false" Unicode="false" Nullable="false" />
+          <NavigationProperty Name="Task" Relationship="Self.FK_PBLItemId" FromRole="PBLItem" ToRole="Task" />
+          <NavigationProperty Name="Project" Relationship="Self.FK_PBLItemProjectId" FromRole="PBLItem" ToRole="Project" />
+          <NavigationProperty Name="Sprint" Relationship="Self.FK_PBLItemSprintId" FromRole="PBLItem" ToRole="Sprint" />
+          <NavigationProperty Name="Status" Relationship="Self.FK_PBLItemStatusId" FromRole="PBLItem" ToRole="Status" />
+        </EntityType>
+        <EntityType Name="Person">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="firstName" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="lastName" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="phone" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="email" Type="String" MaxLength="256" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="ProjectRoleAssignment" Relationship="Self.fk_ProjRoleAssPersonId" FromRole="Person" ToRole="ProjectRoleAssignment" />
+          <NavigationProperty Name="Task" Relationship="Self.FK_TaskPersonId" FromRole="Person" ToRole="Task" />
+        </EntityType>
+        <EntityType Name="Project">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="definitionOfDoneId" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="DefinitionOfDone" Relationship="Self.FK_definitionOfDoneId" FromRole="Project" ToRole="DefinitionOfDone" />
+          <NavigationProperty Name="PBLItem" Relationship="Self.FK_PBLItemProjectId" FromRole="Project" ToRole="PBLItem" />
+          <NavigationProperty Name="ProjectRoleAssignment" Relationship="Self.fk_ProjRoleAssProjectId" FromRole="Project" ToRole="ProjectRoleAssignment" />
+          <NavigationProperty Name="Sprint" Relationship="Self.fk_SprintProjectId" FromRole="Project" ToRole="Sprint" />
+        </EntityType>
+        <EntityType Name="ProjectRoleAssignment">
+          <Key>
+            <PropertyRef Name="projectId" />
+            <PropertyRef Name="personId" />
+          </Key>
+          <Property Name="projectId" Type="Int32" Nullable="false" />
+          <Property Name="personId" Type="Int32" Nullable="false" />
+          <Property Name="roleId" Type="Int32" />
+          <NavigationProperty Name="Person" Relationship="Self.fk_ProjRoleAssPersonId" FromRole="ProjectRoleAssignment" ToRole="Person" />
+          <NavigationProperty Name="Project" Relationship="Self.fk_ProjRoleAssProjectId" FromRole="ProjectRoleAssignment" ToRole="Project" />
+          <NavigationProperty Name="ScrumRoleType" Relationship="Self.fk_roleId" FromRole="ProjectRoleAssignment" ToRole="ScrumRoleType" />
+        </EntityType>
+        <EntityType Name="ScrumRoleType">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" />
+          <Property Name="name" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="ProjectRoleAssignment" Relationship="Self.fk_roleId" FromRole="ScrumRoleType" ToRole="ProjectRoleAssignment" />
+        </EntityType>
+        <EntityType Name="Sprint">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="name" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="projectId" Type="Int32" Nullable="false" />
+          <Property Name="startDate" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="endDate" Type="DateTime" Nullable="false" Precision="0" />
+          <NavigationProperty Name="Meeting" Relationship="Self.fk_MeetingSprintId" FromRole="Sprint" ToRole="Meeting" />
+          <NavigationProperty Name="PBLItem" Relationship="Self.FK_PBLItemSprintId" FromRole="Sprint" ToRole="PBLItem" />
+          <NavigationProperty Name="Project" Relationship="Self.fk_SprintProjectId" FromRole="Sprint" ToRole="Project" />
+        </EntityType>
+        <EntityType Name="Status">
+          <Key>
+            <PropertyRef Name="statusId" />
+          </Key>
+          <Property Name="statusId" Type="Int32" Nullable="false" />
+          <Property Name="status1" Type="String" MaxLength="25" FixedLength="false" Unicode="false" Nullable="false" />
+          <NavigationProperty Name="PBLItem" Relationship="Self.FK_PBLItemStatusId" FromRole="Status" ToRole="PBLItem" />
+          <NavigationProperty Name="Task" Relationship="Self.FK_TaskStatusId" FromRole="Status" ToRole="Task" />
+        </EntityType>
+        <EntityType Name="Task">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="name" Type="String" MaxLength="200" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="statusID" Type="Int32" Nullable="false" />
+          <Property Name="priority" Type="Int32" Nullable="false" />
+          <Property Name="estimatedHours" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="description" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="PBLItemID" Type="Int32" Nullable="false" />
+          <Property Name="personID" Type="Int32" />
+          <Property Name="assignmentDate" Type="DateTime" Precision="0" />
+          <Property Name="completionDate" Type="DateTime" Precision="0" />
+          <NavigationProperty Name="PBLItem" Relationship="Self.FK_PBLItemId" FromRole="Task" ToRole="PBLItem" />
+          <NavigationProperty Name="Person" Relationship="Self.FK_TaskPersonId" FromRole="Task" ToRole="Person" />
+          <NavigationProperty Name="Status" Relationship="Self.FK_TaskStatusId" FromRole="Task" ToRole="Status" />
+        </EntityType>
+        <Association Name="FK_definitionOfDoneId">
+          <End Role="DefinitionOfDone" Type="Self.DefinitionOfDone" Multiplicity="1" />
+          <End Role="Project" Type="Self.Project" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="DefinitionOfDone">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="Project">
+              <PropertyRef Name="definitionOfDoneId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="fk_MeetingSprintId">
+          <End Role="Sprint" Type="Self.Sprint" Multiplicity="0..1" />
+          <End Role="Meeting" Type="Self.Meeting" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Sprint">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="Meeting">
+              <PropertyRef Name="sprintId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="fk_meetingTypeId">
+          <End Role="MeetingType" Type="Self.MeetingType" Multiplicity="0..1" />
+          <End Role="Meeting" Type="Self.Meeting" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="MeetingType">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="Meeting">
+              <PropertyRef Name="meetingTypeId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PBLItemId">
+          <End Role="PBLItem" Type="Self.PBLItem" Multiplicity="1" />
+          <End Role="Task" Type="Self.Task" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PBLItem">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="Task">
+              <PropertyRef Name="PBLItemID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PBLItemProjectId">
+          <End Role="Project" Type="Self.Project" Multiplicity="1" />
+          <End Role="PBLItem" Type="Self.PBLItem" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Project">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="PBLItem">
+              <PropertyRef Name="projectId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PBLItemSprintId">
+          <End Role="Sprint" Type="Self.Sprint" Multiplicity="0..1" />
+          <End Role="PBLItem" Type="Self.PBLItem" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Sprint">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="PBLItem">
+              <PropertyRef Name="sprintId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PBLItemStatusId">
+          <End Role="Status" Type="Self.Status" Multiplicity="1" />
+          <End Role="PBLItem" Type="Self.PBLItem" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Status">
+              <PropertyRef Name="statusId" />
+            </Principal>
+            <Dependent Role="PBLItem">
+              <PropertyRef Name="statusID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="fk_ProjRoleAssPersonId">
+          <End Role="Person" Type="Self.Person" Multiplicity="1" />
+          <End Role="ProjectRoleAssignment" Type="Self.ProjectRoleAssignment" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Person">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="ProjectRoleAssignment">
+              <PropertyRef Name="personId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TaskPersonId">
+          <End Role="Person" Type="Self.Person" Multiplicity="0..1" />
+          <End Role="Task" Type="Self.Task" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Person">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="Task">
+              <PropertyRef Name="personID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="fk_ProjRoleAssProjectId">
+          <End Role="Project" Type="Self.Project" Multiplicity="1" />
+          <End Role="ProjectRoleAssignment" Type="Self.ProjectRoleAssignment" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Project">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="ProjectRoleAssignment">
+              <PropertyRef Name="projectId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="fk_SprintProjectId">
+          <End Role="Project" Type="Self.Project" Multiplicity="1" />
+          <End Role="Sprint" Type="Self.Sprint" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Project">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="Sprint">
+              <PropertyRef Name="projectId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="fk_roleId">
+          <End Role="ScrumRoleType" Type="Self.ScrumRoleType" Multiplicity="0..1" />
+          <End Role="ProjectRoleAssignment" Type="Self.ProjectRoleAssignment" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ScrumRoleType">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="ProjectRoleAssignment">
+              <PropertyRef Name="roleId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TaskStatusId">
+          <End Role="Status" Type="Self.Status" Multiplicity="1" />
+          <End Role="Task" Type="Self.Task" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Status">
+              <PropertyRef Name="statusId" />
+            </Principal>
+            <Dependent Role="Task">
+              <PropertyRef Name="statusID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="ScrumCaseDBEntities1" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="DefinitionOfDone" EntityType="Self.DefinitionOfDone" />
+          <EntitySet Name="Meeting" EntityType="Self.Meeting" />
+          <EntitySet Name="MeetingType" EntityType="Self.MeetingType" />
+          <EntitySet Name="PBLItem" EntityType="Self.PBLItem" />
+          <EntitySet Name="Person" EntityType="Self.Person" />
+          <EntitySet Name="Project" EntityType="Self.Project" />
+          <EntitySet Name="ProjectRoleAssignment" EntityType="Self.ProjectRoleAssignment" />
+          <EntitySet Name="ScrumRoleType" EntityType="Self.ScrumRoleType" />
+          <EntitySet Name="Sprint" EntityType="Self.Sprint" />
+          <EntitySet Name="Status" EntityType="Self.Status" />
+          <EntitySet Name="Task" EntityType="Self.Task" />
+          <AssociationSet Name="FK_definitionOfDoneId" Association="Self.FK_definitionOfDoneId">
+            <End Role="DefinitionOfDone" EntitySet="DefinitionOfDone" />
+            <End Role="Project" EntitySet="Project" />
+          </AssociationSet>
+          <AssociationSet Name="fk_MeetingSprintId" Association="Self.fk_MeetingSprintId">
+            <End Role="Sprint" EntitySet="Sprint" />
+            <End Role="Meeting" EntitySet="Meeting" />
+          </AssociationSet>
+          <AssociationSet Name="fk_meetingTypeId" Association="Self.fk_meetingTypeId">
+            <End Role="MeetingType" EntitySet="MeetingType" />
+            <End Role="Meeting" EntitySet="Meeting" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PBLItemId" Association="Self.FK_PBLItemId">
+            <End Role="PBLItem" EntitySet="PBLItem" />
+            <End Role="Task" EntitySet="Task" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PBLItemProjectId" Association="Self.FK_PBLItemProjectId">
+            <End Role="Project" EntitySet="Project" />
+            <End Role="PBLItem" EntitySet="PBLItem" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PBLItemSprintId" Association="Self.FK_PBLItemSprintId">
+            <End Role="Sprint" EntitySet="Sprint" />
+            <End Role="PBLItem" EntitySet="PBLItem" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PBLItemStatusId" Association="Self.FK_PBLItemStatusId">
+            <End Role="Status" EntitySet="Status" />
+            <End Role="PBLItem" EntitySet="PBLItem" />
+          </AssociationSet>
+          <AssociationSet Name="fk_ProjRoleAssPersonId" Association="Self.fk_ProjRoleAssPersonId">
+            <End Role="Person" EntitySet="Person" />
+            <End Role="ProjectRoleAssignment" EntitySet="ProjectRoleAssignment" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TaskPersonId" Association="Self.FK_TaskPersonId">
+            <End Role="Person" EntitySet="Person" />
+            <End Role="Task" EntitySet="Task" />
+          </AssociationSet>
+          <AssociationSet Name="fk_ProjRoleAssProjectId" Association="Self.fk_ProjRoleAssProjectId">
+            <End Role="Project" EntitySet="Project" />
+            <End Role="ProjectRoleAssignment" EntitySet="ProjectRoleAssignment" />
+          </AssociationSet>
+          <AssociationSet Name="fk_SprintProjectId" Association="Self.fk_SprintProjectId">
+            <End Role="Project" EntitySet="Project" />
+            <End Role="Sprint" EntitySet="Sprint" />
+          </AssociationSet>
+          <AssociationSet Name="fk_roleId" Association="Self.fk_roleId">
+            <End Role="ScrumRoleType" EntitySet="ScrumRoleType" />
+            <End Role="ProjectRoleAssignment" EntitySet="ProjectRoleAssignment" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TaskStatusId" Association="Self.FK_TaskStatusId">
+            <End Role="Status" EntitySet="Status" />
+            <End Role="Task" EntitySet="Task" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="ScrumCaseDBModelStoreContainer" CdmEntityContainer="ScrumCaseDBEntities1">
+          <EntitySetMapping Name="DefinitionOfDone">
+            <EntityTypeMapping TypeName="ScrumCaseDBModel.DefinitionOfDone">
+              <MappingFragment StoreEntitySet="DefinitionOfDone">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="description" ColumnName="description" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Meeting">
+            <EntityTypeMapping TypeName="ScrumCaseDBModel.Meeting">
+              <MappingFragment StoreEntitySet="Meeting">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="meetingTypeId" ColumnName="meetingTypeId" />
+                <ScalarProperty Name="sprintId" ColumnName="sprintId" />
+                <ScalarProperty Name="startTime" ColumnName="startTime" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="MeetingType">
+            <EntityTypeMapping TypeName="ScrumCaseDBModel.MeetingType">
+              <MappingFragment StoreEntitySet="MeetingType">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="name" ColumnName="name" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="PBLItem">
+            <EntityTypeMapping TypeName="ScrumCaseDBModel.PBLItem">
+              <MappingFragment StoreEntitySet="PBLItem">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="name" ColumnName="name" />
+                <ScalarProperty Name="projectId" ColumnName="projectId" />
+                <ScalarProperty Name="sprintId" ColumnName="sprintId" />
+                <ScalarProperty Name="statusID" ColumnName="statusID" />
+                <ScalarProperty Name="priority" ColumnName="priority" />
+                <ScalarProperty Name="estimatedHours" ColumnName="estimatedHours" />
+                <ScalarProperty Name="description" ColumnName="description" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Person">
+            <EntityTypeMapping TypeName="ScrumCaseDBModel.Person">
+              <MappingFragment StoreEntitySet="Person">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="firstName" ColumnName="firstName" />
+                <ScalarProperty Name="lastName" ColumnName="lastName" />
+                <ScalarProperty Name="phone" ColumnName="phone" />
+                <ScalarProperty Name="email" ColumnName="email" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Project">
+            <EntityTypeMapping TypeName="ScrumCaseDBModel.Project">
+              <MappingFragment StoreEntitySet="Project">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="definitionOfDoneId" ColumnName="definitionOfDoneId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ProjectRoleAssignment">
+            <EntityTypeMapping TypeName="ScrumCaseDBModel.ProjectRoleAssignment">
+              <MappingFragment StoreEntitySet="ProjectRoleAssignment">
+                <ScalarProperty Name="projectId" ColumnName="projectId" />
+                <ScalarProperty Name="personId" ColumnName="personId" />
+                <ScalarProperty Name="roleId" ColumnName="roleId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ScrumRoleType">
+            <EntityTypeMapping TypeName="ScrumCaseDBModel.ScrumRoleType">
+              <MappingFragment StoreEntitySet="ScrumRoleType">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="name" ColumnName="name" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Sprint">
+            <EntityTypeMapping TypeName="ScrumCaseDBModel.Sprint">
+              <MappingFragment StoreEntitySet="Sprint">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="name" ColumnName="name" />
+                <ScalarProperty Name="projectId" ColumnName="projectId" />
+                <ScalarProperty Name="startDate" ColumnName="startDate" />
+                <ScalarProperty Name="endDate" ColumnName="endDate" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Status">
+            <EntityTypeMapping TypeName="ScrumCaseDBModel.Status">
+              <MappingFragment StoreEntitySet="Status">
+                <ScalarProperty Name="statusId" ColumnName="statusId" />
+                <ScalarProperty Name="status1" ColumnName="status" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Task">
+            <EntityTypeMapping TypeName="ScrumCaseDBModel.Task">
+              <MappingFragment StoreEntitySet="Task">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="name" ColumnName="name" />
+                <ScalarProperty Name="statusID" ColumnName="statusID" />
+                <ScalarProperty Name="priority" ColumnName="priority" />
+                <ScalarProperty Name="estimatedHours" ColumnName="estimatedHours" />
+                <ScalarProperty Name="description" ColumnName="description" />
+                <ScalarProperty Name="PBLItemID" ColumnName="PBLItemID" />
+                <ScalarProperty Name="personID" ColumnName="personID" />
+                <ScalarProperty Name="assignmentDate" ColumnName="assignmentDate" />
+                <ScalarProperty Name="completionDate" ColumnName="completionDate" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

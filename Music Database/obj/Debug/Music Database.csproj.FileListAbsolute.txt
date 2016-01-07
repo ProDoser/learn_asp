@@ -1,0 +1,74 @@
+C:\Users\Doser\Documents\Visual Studio 2013\Projects\exe501_lastName_firstName\Music Database\bin\Music Database.dll.config
+C:\Users\Doser\Documents\Visual Studio 2013\Projects\exe501_lastName_firstName\Music Database\bin\Music Database.dll
+C:\Users\Doser\Documents\Visual Studio 2013\Projects\exe501_lastName_firstName\Music Database\bin\Music Database.pdb
+C:\Users\Doser\Documents\Visual Studio 2013\Projects\exe501_lastName_firstName\Music Database\bin\Antlr3.Runtime.dll
+C:\Users\Doser\Documents\Visual Studio 2013\Projects\exe501_lastName_firstName\Music Database\bin\AspNet.ScriptManager.jQuery.dll
+C:\Users\Doser\Documents\Visual Studio 2013\Projects\exe501_lastName_firstName\Music Database\bin\AspNet.ScriptManager.jQuery.UI.Combined.dll
+C:\Users\Doser\Documents\Visual Studio 2013\Projects\exe501_lastName_firstName\Music Database\bin\DotNetOpenAuth.AspNet.dll
+C:\Users\Doser\Documents\Visual Studio 2013\Projects\exe501_lastName_firstName\Music Database\bin\DotNetOpenAuth.Core.dll
+C:\Users\Doser\Documents\Visual Studio 2013\Projects\exe501_lastName_firstName\Music Database\bin\DotNetOpenAuth.OAuth.Consumer.dll
+C:\Users\Doser\Documents\Visual Studio 2013\Projects\exe501_lastName_firstName\Music Database\bin\DotNetOpenAuth.OAuth.dll
+C:\Users\Doser\Documents\Visual Studio 2013\Projects\exe501_lastName_firstName\Music Database\bin\DotNetOpenAuth.OpenId.dll
+C:\Users\Doser\Documents\Visual Studio 2013\Projects\exe501_lastName_firstName\Music Database\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+C:\Users\Doser\Documents\Visual Studio 2013\Projects\exe501_lastName_firstName\Music Database\bin\EntityFramework.dll
+C:\Users\Doser\Documents\Visual Studio 2013\Projects\exe501_lastName_firstName\Music Database\bin\EntityFramework.SqlServer.dll
+C:\Users\Doser\Documents\Visual Studio 2013\Projects\exe501_lastName_firstName\Music Database\bin\Microsoft.AspNet.FriendlyUrls.dll
+C:\Users\Doser\Documents\Visual Studio 2013\Projects\exe501_lastName_firstName\Music Database\bin\Microsoft.AspNet.Membership.OpenAuth.dll
+C:\Users\Doser\Documents\Visual Studio 2013\Projects\exe501_lastName_firstName\Music Database\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+C:\Users\Doser\Documents\Visual Studio 2013\Projects\exe501_lastName_firstName\Music Database\bin\Microsoft.ScriptManager.MSAjax.dll
+C:\Users\Doser\Documents\Visual Studio 2013\Projects\exe501_lastName_firstName\Music Database\bin\Microsoft.ScriptManager.WebForms.dll
+C:\Users\Doser\Documents\Visual Studio 2013\Projects\exe501_lastName_firstName\Music Database\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Doser\Documents\Visual Studio 2013\Projects\exe501_lastName_firstName\Music Database\bin\System.Web.Optimization.dll
+C:\Users\Doser\Documents\Visual Studio 2013\Projects\exe501_lastName_firstName\Music Database\bin\System.Web.Providers.dll
+C:\Users\Doser\Documents\Visual Studio 2013\Projects\exe501_lastName_firstName\Music Database\bin\WebGrease.dll
+C:\Users\Doser\Documents\Visual Studio 2013\Projects\exe501_lastName_firstName\Music Database\bin\EntityFramework.xml
+C:\Users\Doser\Documents\Visual Studio 2013\Projects\exe501_lastName_firstName\Music Database\bin\EntityFramework.SqlServer.xml
+C:\Users\Doser\Documents\Visual Studio 2013\Projects\exe501_lastName_firstName\Music Database\bin\System.Web.Providers.xml
+C:\Users\Doser\Documents\Visual Studio 2013\Projects\exe501_lastName_firstName\Music Database\bin\DotNetOpenAuth.Core.xml
+C:\Users\Doser\Documents\Visual Studio 2013\Projects\exe501_lastName_firstName\Music Database\bin\DotNetOpenAuth.OAuth.xml
+C:\Users\Doser\Documents\Visual Studio 2013\Projects\exe501_lastName_firstName\Music Database\bin\DotNetOpenAuth.OAuth.Consumer.xml
+C:\Users\Doser\Documents\Visual Studio 2013\Projects\exe501_lastName_firstName\Music Database\bin\DotNetOpenAuth.OpenId.xml
+C:\Users\Doser\Documents\Visual Studio 2013\Projects\exe501_lastName_firstName\Music Database\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+C:\Users\Doser\Documents\Visual Studio 2013\Projects\exe501_lastName_firstName\Music Database\bin\DotNetOpenAuth.AspNet.xml
+C:\Users\Doser\Documents\Visual Studio 2013\Projects\exe501_lastName_firstName\Music Database\bin\Microsoft.AspNet.Membership.OpenAuth.xml
+C:\Users\Doser\Documents\Visual Studio 2013\Projects\exe501_lastName_firstName\Music Database\bin\Microsoft.AspNet.FriendlyUrls.xml
+C:\Users\Doser\Documents\Visual Studio 2013\Projects\exe501_lastName_firstName\Music Database\obj\Debug\Music Database.dll
+C:\Users\Doser\Documents\Visual Studio 2013\Projects\exe501_lastName_firstName\Music Database\obj\Debug\Music Database.pdb
+C:\Users\Doser\Documents\Visual Studio 2013\Projects\exe501_lastName_firstName\Music Database\obj\Debug\Music Database.csprojResolveAssemblyReference.cache
+C:\Users\Doser\Documents\Visual Studio 2013\Projects\exe501_Zadorozhnykh_Leonid\Music Database\bin\Music Database.dll.config
+C:\Users\Doser\Documents\Visual Studio 2013\Projects\exe501_Zadorozhnykh_Leonid\Music Database\bin\Music Database.dll
+C:\Users\Doser\Documents\Visual Studio 2013\Projects\exe501_Zadorozhnykh_Leonid\Music Database\bin\Music Database.pdb
+C:\Users\Doser\Documents\Visual Studio 2013\Projects\exe501_Zadorozhnykh_Leonid\Music Database\bin\Antlr3.Runtime.dll
+C:\Users\Doser\Documents\Visual Studio 2013\Projects\exe501_Zadorozhnykh_Leonid\Music Database\bin\AspNet.ScriptManager.jQuery.dll
+C:\Users\Doser\Documents\Visual Studio 2013\Projects\exe501_Zadorozhnykh_Leonid\Music Database\bin\AspNet.ScriptManager.jQuery.UI.Combined.dll
+C:\Users\Doser\Documents\Visual Studio 2013\Projects\exe501_Zadorozhnykh_Leonid\Music Database\bin\DotNetOpenAuth.AspNet.dll
+C:\Users\Doser\Documents\Visual Studio 2013\Projects\exe501_Zadorozhnykh_Leonid\Music Database\bin\DotNetOpenAuth.Core.dll
+C:\Users\Doser\Documents\Visual Studio 2013\Projects\exe501_Zadorozhnykh_Leonid\Music Database\bin\DotNetOpenAuth.OAuth.Consumer.dll
+C:\Users\Doser\Documents\Visual Studio 2013\Projects\exe501_Zadorozhnykh_Leonid\Music Database\bin\DotNetOpenAuth.OAuth.dll
+C:\Users\Doser\Documents\Visual Studio 2013\Projects\exe501_Zadorozhnykh_Leonid\Music Database\bin\DotNetOpenAuth.OpenId.dll
+C:\Users\Doser\Documents\Visual Studio 2013\Projects\exe501_Zadorozhnykh_Leonid\Music Database\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+C:\Users\Doser\Documents\Visual Studio 2013\Projects\exe501_Zadorozhnykh_Leonid\Music Database\bin\EntityFramework.dll
+C:\Users\Doser\Documents\Visual Studio 2013\Projects\exe501_Zadorozhnykh_Leonid\Music Database\bin\EntityFramework.SqlServer.dll
+C:\Users\Doser\Documents\Visual Studio 2013\Projects\exe501_Zadorozhnykh_Leonid\Music Database\bin\Microsoft.AspNet.FriendlyUrls.dll
+C:\Users\Doser\Documents\Visual Studio 2013\Projects\exe501_Zadorozhnykh_Leonid\Music Database\bin\Microsoft.AspNet.Membership.OpenAuth.dll
+C:\Users\Doser\Documents\Visual Studio 2013\Projects\exe501_Zadorozhnykh_Leonid\Music Database\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+C:\Users\Doser\Documents\Visual Studio 2013\Projects\exe501_Zadorozhnykh_Leonid\Music Database\bin\Microsoft.ScriptManager.MSAjax.dll
+C:\Users\Doser\Documents\Visual Studio 2013\Projects\exe501_Zadorozhnykh_Leonid\Music Database\bin\Microsoft.ScriptManager.WebForms.dll
+C:\Users\Doser\Documents\Visual Studio 2013\Projects\exe501_Zadorozhnykh_Leonid\Music Database\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Doser\Documents\Visual Studio 2013\Projects\exe501_Zadorozhnykh_Leonid\Music Database\bin\System.Web.Optimization.dll
+C:\Users\Doser\Documents\Visual Studio 2013\Projects\exe501_Zadorozhnykh_Leonid\Music Database\bin\System.Web.Providers.dll
+C:\Users\Doser\Documents\Visual Studio 2013\Projects\exe501_Zadorozhnykh_Leonid\Music Database\bin\WebGrease.dll
+C:\Users\Doser\Documents\Visual Studio 2013\Projects\exe501_Zadorozhnykh_Leonid\Music Database\bin\EntityFramework.xml
+C:\Users\Doser\Documents\Visual Studio 2013\Projects\exe501_Zadorozhnykh_Leonid\Music Database\bin\EntityFramework.SqlServer.xml
+C:\Users\Doser\Documents\Visual Studio 2013\Projects\exe501_Zadorozhnykh_Leonid\Music Database\bin\System.Web.Providers.xml
+C:\Users\Doser\Documents\Visual Studio 2013\Projects\exe501_Zadorozhnykh_Leonid\Music Database\bin\DotNetOpenAuth.Core.xml
+C:\Users\Doser\Documents\Visual Studio 2013\Projects\exe501_Zadorozhnykh_Leonid\Music Database\bin\DotNetOpenAuth.OAuth.xml
+C:\Users\Doser\Documents\Visual Studio 2013\Projects\exe501_Zadorozhnykh_Leonid\Music Database\bin\DotNetOpenAuth.OAuth.Consumer.xml
+C:\Users\Doser\Documents\Visual Studio 2013\Projects\exe501_Zadorozhnykh_Leonid\Music Database\bin\DotNetOpenAuth.OpenId.xml
+C:\Users\Doser\Documents\Visual Studio 2013\Projects\exe501_Zadorozhnykh_Leonid\Music Database\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+C:\Users\Doser\Documents\Visual Studio 2013\Projects\exe501_Zadorozhnykh_Leonid\Music Database\bin\DotNetOpenAuth.AspNet.xml
+C:\Users\Doser\Documents\Visual Studio 2013\Projects\exe501_Zadorozhnykh_Leonid\Music Database\bin\Microsoft.AspNet.Membership.OpenAuth.xml
+C:\Users\Doser\Documents\Visual Studio 2013\Projects\exe501_Zadorozhnykh_Leonid\Music Database\bin\Microsoft.AspNet.FriendlyUrls.xml
+C:\Users\Doser\Documents\Visual Studio 2013\Projects\exe501_Zadorozhnykh_Leonid\Music Database\obj\Debug\Music Database.csprojResolveAssemblyReference.cache
+C:\Users\Doser\Documents\Visual Studio 2013\Projects\exe501_Zadorozhnykh_Leonid\Music Database\obj\Debug\Music Database.dll
+C:\Users\Doser\Documents\Visual Studio 2013\Projects\exe501_Zadorozhnykh_Leonid\Music Database\obj\Debug\Music Database.pdb

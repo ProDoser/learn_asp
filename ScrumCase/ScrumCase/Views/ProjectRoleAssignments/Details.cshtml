@@ -1,0 +1,42 @@
+﻿@model ScrumCase.Models.ProjectRoleAssignment
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>ProjectRoleAssignment</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Person.firstName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Person.firstName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Project.id)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Project.id)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ScrumRoleType.name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ScrumRoleType.name)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

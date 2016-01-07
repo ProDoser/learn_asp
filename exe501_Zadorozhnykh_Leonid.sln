@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyBooks", "MyBooks\MyBooks.csproj", "{974E889F-968C-43A1-9430-9FD40AA0AD15}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HRSolutionLite", "HRSolutionLite\HRSolutionLite.csproj", "{38961368-B028-4FE0-B56E-6399684C968D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Music Database", "Music Database\Music Database.csproj", "{7E953E63-9E78-44B5-99C8-A23430F646C4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{974E889F-968C-43A1-9430-9FD40AA0AD15}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{974E889F-968C-43A1-9430-9FD40AA0AD15}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{974E889F-968C-43A1-9430-9FD40AA0AD15}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{974E889F-968C-43A1-9430-9FD40AA0AD15}.Release|Any CPU.Build.0 = Release|Any CPU
+		{38961368-B028-4FE0-B56E-6399684C968D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38961368-B028-4FE0-B56E-6399684C968D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38961368-B028-4FE0-B56E-6399684C968D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38961368-B028-4FE0-B56E-6399684C968D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7E953E63-9E78-44B5-99C8-A23430F646C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E953E63-9E78-44B5-99C8-A23430F646C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E953E63-9E78-44B5-99C8-A23430F646C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E953E63-9E78-44B5-99C8-A23430F646C4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

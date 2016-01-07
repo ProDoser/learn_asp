@@ -1,0 +1,138 @@
+C:\Users\Doser\Source\Workspaces\ScrumCase\ScrumCase\ScrumCase\bin\roslyn\csc.exe
+C:\Users\Doser\Source\Workspaces\ScrumCase\ScrumCase\ScrumCase\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Doser\Source\Workspaces\ScrumCase\ScrumCase\ScrumCase\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Doser\Source\Workspaces\ScrumCase\ScrumCase\ScrumCase\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Doser\Source\Workspaces\ScrumCase\ScrumCase\ScrumCase\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Doser\Source\Workspaces\ScrumCase\ScrumCase\ScrumCase\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Doser\Source\Workspaces\ScrumCase\ScrumCase\ScrumCase\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Doser\Source\Workspaces\ScrumCase\ScrumCase\ScrumCase\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Doser\Source\Workspaces\ScrumCase\ScrumCase\ScrumCase\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Doser\Source\Workspaces\ScrumCase\ScrumCase\ScrumCase\bin\roslyn\vbc.exe
+C:\Users\Doser\Source\Workspaces\ScrumCase\ScrumCase\ScrumCase\bin\roslyn\VBCSCompiler.exe
+C:\Users\Doser\Source\Workspaces\ScrumCase\ScrumCase\ScrumCase\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Doser\Source\Workspaces\ScrumCase\ScrumCase\ScrumCase\bin\ScrumCase.dll.config
+C:\Users\Doser\Source\Workspaces\ScrumCase\ScrumCase\ScrumCase\bin\ScrumCase.dll
+C:\Users\Doser\Source\Workspaces\ScrumCase\ScrumCase\ScrumCase\bin\ScrumCase.pdb
+C:\Users\Doser\Source\Workspaces\ScrumCase\ScrumCase\ScrumCase\bin\Antlr3.Runtime.dll
+C:\Users\Doser\Source\Workspaces\ScrumCase\ScrumCase\ScrumCase\bin\EntityFramework.dll
+C:\Users\Doser\Source\Workspaces\ScrumCase\ScrumCase\ScrumCase\bin\EntityFramework.SqlServer.dll
+C:\Users\Doser\Source\Workspaces\ScrumCase\ScrumCase\ScrumCase\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Doser\Source\Workspaces\ScrumCase\ScrumCase\ScrumCase\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Doser\Source\Workspaces\ScrumCase\ScrumCase\ScrumCase\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\Doser\Source\Workspaces\ScrumCase\ScrumCase\ScrumCase\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Doser\Source\Workspaces\ScrumCase\ScrumCase\ScrumCase\bin\Microsoft.Owin.dll
+C:\Users\Doser\Source\Workspaces\ScrumCase\ScrumCase\ScrumCase\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Doser\Source\Workspaces\ScrumCase\ScrumCase\ScrumCase\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\Doser\Source\Workspaces\ScrumCase\ScrumCase\ScrumCase\bin\Microsoft.Owin.Security.dll
+C:\Users\Doser\Source\Workspaces\ScrumCase\ScrumCase\ScrumCase\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\Doser\Source\Workspaces\ScrumCase\ScrumCase\ScrumCase\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\Doser\Source\Workspaces\ScrumCase\ScrumCase\ScrumCase\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\Doser\Source\Workspaces\ScrumCase\ScrumCase\ScrumCase\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\Doser\Source\Workspaces\ScrumCase\ScrumCase\ScrumCase\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\Doser\Source\Workspaces\ScrumCase\ScrumCase\ScrumCase\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Doser\Source\Workspaces\ScrumCase\ScrumCase\ScrumCase\bin\Newtonsoft.Json.dll
+C:\Users\Doser\Source\Workspaces\ScrumCase\ScrumCase\ScrumCase\bin\Owin.dll
+C:\Users\Doser\Source\Workspaces\ScrumCase\ScrumCase\ScrumCase\bin\System.Web.Helpers.dll
+C:\Users\Doser\Source\Workspaces\ScrumCase\ScrumCase\ScrumCase\bin\System.Web.Mvc.dll
+C:\Users\Doser\Source\Workspaces\ScrumCase\ScrumCase\ScrumCase\bin\System.Web.Optimization.dll
+C:\Users\Doser\Source\Workspaces\ScrumCase\ScrumCase\ScrumCase\bin\System.Web.Razor.dll
+C:\Users\Doser\Source\Workspaces\ScrumCase\ScrumCase\ScrumCase\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Doser\Source\Workspaces\ScrumCase\ScrumCase\ScrumCase\bin\System.Web.WebPages.dll
+C:\Users\Doser\Source\Workspaces\ScrumCase\ScrumCase\ScrumCase\bin\System.Web.WebPages.Razor.dll
+C:\Users\Doser\Source\Workspaces\ScrumCase\ScrumCase\ScrumCase\bin\WebGrease.dll
+C:\Users\Doser\Source\Workspaces\ScrumCase\ScrumCase\ScrumCase\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Doser\Source\Workspaces\ScrumCase\ScrumCase\ScrumCase\bin\System.Web.Helpers.xml
+C:\Users\Doser\Source\Workspaces\ScrumCase\ScrumCase\ScrumCase\bin\System.Web.Mvc.xml
+C:\Users\Doser\Source\Workspaces\ScrumCase\ScrumCase\ScrumCase\bin\System.Web.Optimization.xml
+C:\Users\Doser\Source\Workspaces\ScrumCase\ScrumCase\ScrumCase\bin\System.Web.Razor.xml
+C:\Users\Doser\Source\Workspaces\ScrumCase\ScrumCase\ScrumCase\bin\System.Web.WebPages.xml
+C:\Users\Doser\Source\Workspaces\ScrumCase\ScrumCase\ScrumCase\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Doser\Source\Workspaces\ScrumCase\ScrumCase\ScrumCase\bin\System.Web.WebPages.Razor.xml
+C:\Users\Doser\Source\Workspaces\ScrumCase\ScrumCase\ScrumCase\bin\Antlr3.Runtime.pdb
+C:\Users\Doser\Source\Workspaces\ScrumCase\ScrumCase\ScrumCase\bin\Newtonsoft.Json.xml
+C:\Users\Doser\Source\Workspaces\ScrumCase\ScrumCase\ScrumCase\bin\EntityFramework.xml
+C:\Users\Doser\Source\Workspaces\ScrumCase\ScrumCase\ScrumCase\bin\EntityFramework.SqlServer.xml
+C:\Users\Doser\Source\Workspaces\ScrumCase\ScrumCase\ScrumCase\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Doser\Source\Workspaces\ScrumCase\ScrumCase\ScrumCase\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\Doser\Source\Workspaces\ScrumCase\ScrumCase\ScrumCase\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Doser\Source\Workspaces\ScrumCase\ScrumCase\ScrumCase\bin\Microsoft.Owin.xml
+C:\Users\Doser\Source\Workspaces\ScrumCase\ScrumCase\ScrumCase\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Doser\Source\Workspaces\ScrumCase\ScrumCase\ScrumCase\bin\Microsoft.Owin.Security.xml
+C:\Users\Doser\Source\Workspaces\ScrumCase\ScrumCase\ScrumCase\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\Doser\Source\Workspaces\ScrumCase\ScrumCase\ScrumCase\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\Doser\Source\Workspaces\ScrumCase\ScrumCase\ScrumCase\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\Doser\Source\Workspaces\ScrumCase\ScrumCase\ScrumCase\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\Doser\Source\Workspaces\ScrumCase\ScrumCase\ScrumCase\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\Doser\Source\Workspaces\ScrumCase\ScrumCase\ScrumCase\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\Doser\Source\Workspaces\ScrumCase\ScrumCase\ScrumCase\obj\Debug\ScrumCase.csprojResolveAssemblyReference.cache
+C:\Users\Doser\Source\Workspaces\ScrumCase\ScrumCase\ScrumCase\obj\Debug\ScrumCase.dll
+C:\Users\Doser\Source\Workspaces\ScrumCase\ScrumCase\ScrumCase\obj\Debug\ScrumCase.pdb
+C:\Users\Doser\Documents\Visual Studio 2013\Projects\exe501_Zadorozhnykh_Leonid\ScrumCase\ScrumCase\bin\roslyn\csc.exe
+C:\Users\Doser\Documents\Visual Studio 2013\Projects\exe501_Zadorozhnykh_Leonid\ScrumCase\ScrumCase\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Doser\Documents\Visual Studio 2013\Projects\exe501_Zadorozhnykh_Leonid\ScrumCase\ScrumCase\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Doser\Documents\Visual Studio 2013\Projects\exe501_Zadorozhnykh_Leonid\ScrumCase\ScrumCase\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Doser\Documents\Visual Studio 2013\Projects\exe501_Zadorozhnykh_Leonid\ScrumCase\ScrumCase\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Doser\Documents\Visual Studio 2013\Projects\exe501_Zadorozhnykh_Leonid\ScrumCase\ScrumCase\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Doser\Documents\Visual Studio 2013\Projects\exe501_Zadorozhnykh_Leonid\ScrumCase\ScrumCase\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Doser\Documents\Visual Studio 2013\Projects\exe501_Zadorozhnykh_Leonid\ScrumCase\ScrumCase\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Doser\Documents\Visual Studio 2013\Projects\exe501_Zadorozhnykh_Leonid\ScrumCase\ScrumCase\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Doser\Documents\Visual Studio 2013\Projects\exe501_Zadorozhnykh_Leonid\ScrumCase\ScrumCase\bin\roslyn\vbc.exe
+C:\Users\Doser\Documents\Visual Studio 2013\Projects\exe501_Zadorozhnykh_Leonid\ScrumCase\ScrumCase\bin\roslyn\VBCSCompiler.exe
+C:\Users\Doser\Documents\Visual Studio 2013\Projects\exe501_Zadorozhnykh_Leonid\ScrumCase\ScrumCase\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Doser\Documents\Visual Studio 2013\Projects\exe501_Zadorozhnykh_Leonid\ScrumCase\ScrumCase\bin\ScrumCase.dll.config
+C:\Users\Doser\Documents\Visual Studio 2013\Projects\exe501_Zadorozhnykh_Leonid\ScrumCase\ScrumCase\bin\ScrumCase.dll
+C:\Users\Doser\Documents\Visual Studio 2013\Projects\exe501_Zadorozhnykh_Leonid\ScrumCase\ScrumCase\bin\ScrumCase.pdb
+C:\Users\Doser\Documents\Visual Studio 2013\Projects\exe501_Zadorozhnykh_Leonid\ScrumCase\ScrumCase\bin\Antlr3.Runtime.dll
+C:\Users\Doser\Documents\Visual Studio 2013\Projects\exe501_Zadorozhnykh_Leonid\ScrumCase\ScrumCase\bin\EntityFramework.dll
+C:\Users\Doser\Documents\Visual Studio 2013\Projects\exe501_Zadorozhnykh_Leonid\ScrumCase\ScrumCase\bin\EntityFramework.SqlServer.dll
+C:\Users\Doser\Documents\Visual Studio 2013\Projects\exe501_Zadorozhnykh_Leonid\ScrumCase\ScrumCase\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Doser\Documents\Visual Studio 2013\Projects\exe501_Zadorozhnykh_Leonid\ScrumCase\ScrumCase\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Doser\Documents\Visual Studio 2013\Projects\exe501_Zadorozhnykh_Leonid\ScrumCase\ScrumCase\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\Doser\Documents\Visual Studio 2013\Projects\exe501_Zadorozhnykh_Leonid\ScrumCase\ScrumCase\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Doser\Documents\Visual Studio 2013\Projects\exe501_Zadorozhnykh_Leonid\ScrumCase\ScrumCase\bin\Microsoft.Owin.dll
+C:\Users\Doser\Documents\Visual Studio 2013\Projects\exe501_Zadorozhnykh_Leonid\ScrumCase\ScrumCase\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Doser\Documents\Visual Studio 2013\Projects\exe501_Zadorozhnykh_Leonid\ScrumCase\ScrumCase\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\Doser\Documents\Visual Studio 2013\Projects\exe501_Zadorozhnykh_Leonid\ScrumCase\ScrumCase\bin\Microsoft.Owin.Security.dll
+C:\Users\Doser\Documents\Visual Studio 2013\Projects\exe501_Zadorozhnykh_Leonid\ScrumCase\ScrumCase\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\Doser\Documents\Visual Studio 2013\Projects\exe501_Zadorozhnykh_Leonid\ScrumCase\ScrumCase\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\Doser\Documents\Visual Studio 2013\Projects\exe501_Zadorozhnykh_Leonid\ScrumCase\ScrumCase\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\Doser\Documents\Visual Studio 2013\Projects\exe501_Zadorozhnykh_Leonid\ScrumCase\ScrumCase\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\Doser\Documents\Visual Studio 2013\Projects\exe501_Zadorozhnykh_Leonid\ScrumCase\ScrumCase\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\Doser\Documents\Visual Studio 2013\Projects\exe501_Zadorozhnykh_Leonid\ScrumCase\ScrumCase\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Doser\Documents\Visual Studio 2013\Projects\exe501_Zadorozhnykh_Leonid\ScrumCase\ScrumCase\bin\Newtonsoft.Json.dll
+C:\Users\Doser\Documents\Visual Studio 2013\Projects\exe501_Zadorozhnykh_Leonid\ScrumCase\ScrumCase\bin\Owin.dll
+C:\Users\Doser\Documents\Visual Studio 2013\Projects\exe501_Zadorozhnykh_Leonid\ScrumCase\ScrumCase\bin\System.Web.Helpers.dll
+C:\Users\Doser\Documents\Visual Studio 2013\Projects\exe501_Zadorozhnykh_Leonid\ScrumCase\ScrumCase\bin\System.Web.Mvc.dll
+C:\Users\Doser\Documents\Visual Studio 2013\Projects\exe501_Zadorozhnykh_Leonid\ScrumCase\ScrumCase\bin\System.Web.Optimization.dll
+C:\Users\Doser\Documents\Visual Studio 2013\Projects\exe501_Zadorozhnykh_Leonid\ScrumCase\ScrumCase\bin\System.Web.Razor.dll
+C:\Users\Doser\Documents\Visual Studio 2013\Projects\exe501_Zadorozhnykh_Leonid\ScrumCase\ScrumCase\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Doser\Documents\Visual Studio 2013\Projects\exe501_Zadorozhnykh_Leonid\ScrumCase\ScrumCase\bin\System.Web.WebPages.dll
+C:\Users\Doser\Documents\Visual Studio 2013\Projects\exe501_Zadorozhnykh_Leonid\ScrumCase\ScrumCase\bin\System.Web.WebPages.Razor.dll
+C:\Users\Doser\Documents\Visual Studio 2013\Projects\exe501_Zadorozhnykh_Leonid\ScrumCase\ScrumCase\bin\WebGrease.dll
+C:\Users\Doser\Documents\Visual Studio 2013\Projects\exe501_Zadorozhnykh_Leonid\ScrumCase\ScrumCase\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Doser\Documents\Visual Studio 2013\Projects\exe501_Zadorozhnykh_Leonid\ScrumCase\ScrumCase\bin\System.Web.Helpers.xml
+C:\Users\Doser\Documents\Visual Studio 2013\Projects\exe501_Zadorozhnykh_Leonid\ScrumCase\ScrumCase\bin\System.Web.Mvc.xml
+C:\Users\Doser\Documents\Visual Studio 2013\Projects\exe501_Zadorozhnykh_Leonid\ScrumCase\ScrumCase\bin\System.Web.Optimization.xml
+C:\Users\Doser\Documents\Visual Studio 2013\Projects\exe501_Zadorozhnykh_Leonid\ScrumCase\ScrumCase\bin\System.Web.Razor.xml
+C:\Users\Doser\Documents\Visual Studio 2013\Projects\exe501_Zadorozhnykh_Leonid\ScrumCase\ScrumCase\bin\System.Web.WebPages.xml
+C:\Users\Doser\Documents\Visual Studio 2013\Projects\exe501_Zadorozhnykh_Leonid\ScrumCase\ScrumCase\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Doser\Documents\Visual Studio 2013\Projects\exe501_Zadorozhnykh_Leonid\ScrumCase\ScrumCase\bin\System.Web.WebPages.Razor.xml
+C:\Users\Doser\Documents\Visual Studio 2013\Projects\exe501_Zadorozhnykh_Leonid\ScrumCase\ScrumCase\bin\Antlr3.Runtime.pdb
+C:\Users\Doser\Documents\Visual Studio 2013\Projects\exe501_Zadorozhnykh_Leonid\ScrumCase\ScrumCase\bin\Newtonsoft.Json.xml
+C:\Users\Doser\Documents\Visual Studio 2013\Projects\exe501_Zadorozhnykh_Leonid\ScrumCase\ScrumCase\bin\EntityFramework.xml
+C:\Users\Doser\Documents\Visual Studio 2013\Projects\exe501_Zadorozhnykh_Leonid\ScrumCase\ScrumCase\bin\EntityFramework.SqlServer.xml
+C:\Users\Doser\Documents\Visual Studio 2013\Projects\exe501_Zadorozhnykh_Leonid\ScrumCase\ScrumCase\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Doser\Documents\Visual Studio 2013\Projects\exe501_Zadorozhnykh_Leonid\ScrumCase\ScrumCase\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\Doser\Documents\Visual Studio 2013\Projects\exe501_Zadorozhnykh_Leonid\ScrumCase\ScrumCase\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Doser\Documents\Visual Studio 2013\Projects\exe501_Zadorozhnykh_Leonid\ScrumCase\ScrumCase\bin\Microsoft.Owin.xml
+C:\Users\Doser\Documents\Visual Studio 2013\Projects\exe501_Zadorozhnykh_Leonid\ScrumCase\ScrumCase\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Doser\Documents\Visual Studio 2013\Projects\exe501_Zadorozhnykh_Leonid\ScrumCase\ScrumCase\bin\Microsoft.Owin.Security.xml
+C:\Users\Doser\Documents\Visual Studio 2013\Projects\exe501_Zadorozhnykh_Leonid\ScrumCase\ScrumCase\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\Doser\Documents\Visual Studio 2013\Projects\exe501_Zadorozhnykh_Leonid\ScrumCase\ScrumCase\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\Doser\Documents\Visual Studio 2013\Projects\exe501_Zadorozhnykh_Leonid\ScrumCase\ScrumCase\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\Doser\Documents\Visual Studio 2013\Projects\exe501_Zadorozhnykh_Leonid\ScrumCase\ScrumCase\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\Doser\Documents\Visual Studio 2013\Projects\exe501_Zadorozhnykh_Leonid\ScrumCase\ScrumCase\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\Doser\Documents\Visual Studio 2013\Projects\exe501_Zadorozhnykh_Leonid\ScrumCase\ScrumCase\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\Doser\Documents\Visual Studio 2013\Projects\exe501_Zadorozhnykh_Leonid\ScrumCase\ScrumCase\obj\Debug\ScrumCase.csprojResolveAssemblyReference.cache
+C:\Users\Doser\Documents\Visual Studio 2013\Projects\exe501_Zadorozhnykh_Leonid\ScrumCase\ScrumCase\obj\Debug\ScrumCase.dll
+C:\Users\Doser\Documents\Visual Studio 2013\Projects\exe501_Zadorozhnykh_Leonid\ScrumCase\ScrumCase\obj\Debug\ScrumCase.pdb
